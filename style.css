@@ -1,11 +1,108 @@
 body{
     padding: 0px;
     margin: 0px;
+    background-color: #FF99C0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
 }
+
 .content{
-    margin-top: 360px;
-    margin-left: 490px;
-    height: 100px;
-    width: 200px;
+    margin-left: 390px;
+    height: 200px;
+    width: 400px;
+    position: relative;
+}
+
+.deal{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    z-index: 2;
     text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.button{
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+    padding-top: 8px;
+    background-color: #FF5999;
+    border-radius: 8%;
+}
+
+.button:active{
+    background-color: #A61D52;
+}
+
+.babka{
+    font-size: 30px;
+}
+
+.yes{
+    font-size: 20px;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.yes img{
+    height: 170px;
+    width: 129px;
+    display: inline-block;
+}
+
+.no{
+    font-size: 30px;
+    height: 200px;
+    width: 700px;
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.no img{
+    display: inline-block;
+    height: 500px;
+    margin: 20px;
+}
+
+.ded{
+    font-size: 20px;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+.back{
+    height: 20px;
+    width: 30px;
+    position: static;
+    margin-top: 290px;
+    margin-left: 790px;
+    visibility: hidden;
+    opacity: 0;
+    background-image: url("/pics/back.png");
 }
